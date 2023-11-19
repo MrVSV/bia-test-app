@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/enterPhoneNumberFragment">
+
+    <fragment
+        android:id="@+id/enterPhoneNumberFragment"
+        android:name="com.vsv.biatestapp.auth.enter_phone_number.EnterPhoneNumberFragment"
+        android:label="fragment_enter_phone_number"
+        tools:layout="@layout/fragment_enter_phone_number" >
+        <action
+            android:id="@+id/action_enterPhoneNumberFragment_to_enterCodeFragment"
+            app:destination="@id/enterCodeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/enterCodeFragment"
+        android:name="com.vsv.biatestapp.auth.enter_code.EnterCodeFragment"
+        android:label="fragment_enter_code"
+        tools:layout="@layout/fragment_enter_code">
+        <action
+            android:id="@+id/action_enterCodeFragment_to_task_nav_graph"
+            app:destination="@id/task_nav_graph"
+            app:popUpTo="@id/enterPhoneNumberFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <include app:graph="@navigation/task_nav_graph" />
+</navigation>

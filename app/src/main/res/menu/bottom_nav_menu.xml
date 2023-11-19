@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/task_nav_graph"
+        android:icon="@drawable/bottom_tasks"
+        android:title="Задания"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/graphics"
+        android:icon="@drawable/bottom_graphics"
+        android:title="Графики"
+        app:showAsAction="withText"/>
+
+    <item
+        android:id="@+id/chats"
+        android:icon="@drawable/bottom_chats"
+        android:title="Чат"
+        app:showAsAction="withText"/>
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/bottom_profile"
+        android:title="Профиль"
+        app:showAsAction="withText"/>
+
+</menu>
