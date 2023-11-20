@@ -16,7 +16,7 @@
         app:showAsAction="withText"/>
 
     <item
-        android:id="@+id/chats"
+        android:id="@+id/chats_nav_graph"
         android:icon="@drawable/bottom_chats"
         android:title="Чат"
         app:showAsAction="withText"/>
