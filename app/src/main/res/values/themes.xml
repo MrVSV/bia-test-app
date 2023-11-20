@@ -2,10 +2,10 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.BiaTestApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="backgroundColor">@color/green</item>
-        <item name="background">@color/green</item>
         <item name="colorSurface">@color/white</item>
+<!--        <item name="colorOnSurface">@color/middle_grey</item>-->
+<!--        <item name="colorOnContainer">#EAEEF4</item>-->
+<!--        <item name="colorOnContainer">@color/middle_grey</item>-->
         <item name="android:textAppearanceSmall">@style/TextAppearance.App.DisplaySmall</item>
     </style>
 
@@ -19,5 +19,13 @@
 
     <style name="TextAppearance.App.DisplaySmall" parent="TextAppearance.AppCompat.Small">
         <item name="fontFamily">@font/stolzl_regular</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Button" parent="ThemeOverlay.Material3.Button">
+        <item name="colorPrimary">@color/black</item>
+    </style>
+
+    <style name="Widget.App.Button" parent="Widget.Material3.Button">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button</item>
     </style>
 </resources>

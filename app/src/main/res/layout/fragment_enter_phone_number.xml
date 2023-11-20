@@ -82,6 +82,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:text="Продолжить"
+        style="@style/Widget.App.Button"
         android:layout_marginBottom="20dp"
         android:layout_marginHorizontal="16dp"
         android:textSize="14sp"/>
