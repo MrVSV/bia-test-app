@@ -7,7 +7,8 @@
     android:orientation="vertical"
     tools:context=".tasks.presentation.TaskListFragment">
 
-    <androidx.appcompat.widget.Toolbar
+    <com.google.android.material.appbar.MaterialToolbar
+        android:background="?attr/colorSurface"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:title="Задания" />

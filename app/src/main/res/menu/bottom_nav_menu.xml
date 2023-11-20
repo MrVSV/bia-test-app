@@ -10,7 +10,7 @@
         app:showAsAction="withText" />
 
     <item
-        android:id="@+id/graphics"
+        android:id="@+id/graphics_nav_graph"
         android:icon="@drawable/bottom_graphics"
         android:title="Графики"
         app:showAsAction="withText"/>
@@ -22,7 +22,7 @@
         app:showAsAction="withText"/>
 
     <item
-        android:id="@+id/profile"
+        android:id="@+id/profile_nav_graph"
         android:icon="@drawable/bottom_profile"
         android:title="Профиль"
         app:showAsAction="withText"/>

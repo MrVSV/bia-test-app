@@ -3,9 +3,10 @@
     <style name="Base.Theme.BiaTestApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="backgroundColor">@color/background</item>
-        <item name="background">@color/background</item>
+        <item name="backgroundColor">@color/green</item>
+        <item name="background">@color/green</item>
         <item name="colorSurface">@color/white</item>
+        <item name="android:textAppearanceSmall">@style/TextAppearance.App.DisplaySmall</item>
     </style>
 
     <style name="Theme.BiaTestApp" parent="Base.Theme.BiaTestApp" />
@@ -14,5 +15,9 @@
     <style name="Widget.App.TextInputLayout" parent="">
         <item name="android:insetTop">0dp</item>
         <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <style name="TextAppearance.App.DisplaySmall" parent="TextAppearance.AppCompat.Small">
+        <item name="fontFamily">@font/stolzl_regular</item>
     </style>
 </resources>

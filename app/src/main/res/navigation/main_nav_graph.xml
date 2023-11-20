@@ -9,7 +9,7 @@
         android:id="@+id/enterPhoneNumberFragment"
         android:name="com.vsv.biatestapp.auth.enter_phone_number.EnterPhoneNumberFragment"
         android:label="fragment_enter_phone_number"
-        tools:layout="@layout/fragment_enter_phone_number" >
+        tools:layout="@layout/fragment_enter_phone_number">
         <action
             android:id="@+id/action_enterPhoneNumberFragment_to_enterCodeFragment"
             app:destination="@id/enterCodeFragment" />
@@ -22,9 +22,12 @@
         tools:layout="@layout/fragment_enter_code">
         <action
             android:id="@+id/action_enterCodeFragment_to_task_nav_graph"
-            app:destination="@id/task_nav_graph"
-            app:popUpTo="@id/enterPhoneNumberFragment"
-            app:popUpToInclusive="true"/>
+            app:destination="@id/task_nav_graph" />
     </fragment>
+
     <include app:graph="@navigation/task_nav_graph" />
+    <include app:graph="@navigation/graphics_nav_graph" />
+
+    <include app:graph="@navigation/profile_nav_graph" />
+
 </navigation>
