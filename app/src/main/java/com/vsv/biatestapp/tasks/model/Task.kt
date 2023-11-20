@@ -1,7 +1,7 @@
-package com.vsv.biatestapp.tasks
+package com.vsv.biatestapp.tasks.model
 
 data class Task(
-    val id: Int,
+    override val id: Int,
     val name: String = "Сборка",
     val date: String,
     val time: String,
@@ -11,4 +11,4 @@ data class Task(
     val hasStatus: Boolean = false,
     val status: List<String>,
     val statusMark: StatusMark = StatusMark.NEUTRAL
-)
+): TaskListItem

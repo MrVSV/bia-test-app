@@ -3,15 +3,18 @@ package com.vsv.biatestapp.tasks.delegates
 import android.view.LayoutInflater
 import android.view.View
 import com.vsv.biatestapp.R
+import com.vsv.biatestapp.databinding.StatisticsViewHolderBinding
 import com.vsv.biatestapp.databinding.TaskViewHolderBinding
 import com.vsv.biatestapp.tasks.OnTaskClick
-import com.vsv.biatestapp.tasks.StatusMark
-import com.vsv.biatestapp.tasks.Task
+import com.vsv.biatestapp.tasks.model.Statistics
+import com.vsv.biatestapp.tasks.model.StatusMark
+import com.vsv.biatestapp.tasks.model.Task
+import com.vsv.biatestapp.tasks.model.TaskListItem
 import com.vsv.delegates.adapterDelegate
 
 fun taskDelegate(
     onClick: (OnTaskClick, Int) -> Unit,
-) = adapterDelegate<Task, Task, TaskViewHolderBinding>({ parent ->
+) = adapterDelegate<TaskListItem, Task, TaskViewHolderBinding>({ parent ->
     TaskViewHolderBinding.inflate(LayoutInflater.from(parent.context), parent, false)
 }) {
     binding.confirmBtn.setOnClickListener {
@@ -41,7 +44,9 @@ fun taskDelegate(
             )
         }
         binding.statusDescription.text = item.status[1]
-
-
     }
 }
+
+fun statisticsDelegate() = adapterDelegate<TaskListItem, Statistics, StatisticsViewHolderBinding>({ parent ->
+    StatisticsViewHolderBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+}) {}
